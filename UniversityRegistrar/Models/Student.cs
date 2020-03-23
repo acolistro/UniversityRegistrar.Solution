@@ -14,7 +14,7 @@ namespace UniversityRegistrar.Models
     
     public string Name {get; set;}
 
-    public Date Date { get; set;}
+    public string DateEnrolled { get; set;}
     
     public int CourseId {get; set;}
     

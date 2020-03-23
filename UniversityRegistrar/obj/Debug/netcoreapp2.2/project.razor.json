@@ -2961,6 +2961,11 @@
   "RootNamespace": "UniversityRegistrar",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\ThinkPad\\desktop\\UniversityRegistrar.Solution\\UniversityRegistrar\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ThinkPad\\desktop\\UniversityRegistrar.Solution\\UniversityRegistrar\\Views\\Students\\Create.cshtml",
       "TargetPath": "Views\\Students\\Create.cshtml",
       "FileKind": "mvc"
@@ -2973,6 +2978,11 @@
     {
       "FilePath": "c:\\Users\\ThinkPad\\desktop\\UniversityRegistrar.Solution\\UniversityRegistrar\\Views\\Courses\\Create.cshtml",
       "TargetPath": "Views\\Courses\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ThinkPad\\desktop\\UniversityRegistrar.Solution\\UniversityRegistrar\\Views\\Shared\\Footer.cshtml",
+      "TargetPath": "Views\\Shared\\Footer.cshtml",
       "FileKind": "mvc"
     },
     {

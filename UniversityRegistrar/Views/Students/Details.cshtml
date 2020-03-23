@@ -14,7 +14,7 @@
 
         <p>@Html.DisplayNameFor(model => model.DateEnrolled): @Html.DisplayFor(model => model.DateEnrolled)<p>
         @* <h4>@Html.DisplayNameFor(model => model.Cui): @Html.DisplayFor(model => model.Category)</h4> *@
-        <p>@Html.DisplayNameFor(model => model.CourseId): @Html.DisplayFor(model => model.CourseId)</p>
+        <p>@Html.DisplayNameFor(model => model.StudentId): @Html.DisplayFor(model => model.StudentId)</p>
 
         @if(@Model.Courses.Count == 0)
         {
@@ -34,10 +34,11 @@
               }
             </ul>
         }
+        <hr/>
         <p>@Html.ActionLink("Back to List", "Index")</p>
         <p>@Html.ActionLink("Edit this Student", "Edit", new { id = Model.StudentId })</p>
         <p>@Html.ActionLink("Delete This Student", "Delete", new { id = Model.StudentId })</p>
-        <p>@Html.ActionLink("Add a Cuisine", "AddCourse", new { id = Model.StudentId })</p>
+        <p>@Html.ActionLink("Add a Course", "AddCourse", new { id = Model.StudentId })</p>
 
       </div>
     </div>

@@ -1,0 +1,38 @@
+@{
+  Layout = "_Layout";
+}
+
+@using UniversityRegistrar.Models
+@model UniversityRegistrar.Models.Course
+<div class="row">
+  <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+    <div class="card bg-warning my-5">
+      <div class="card-body">
+        <h2>Students in </h2>
+        <h2>@Html.DisplayFor(model => model.Name)</h2>
+        <hr />
+
+        @if (Model.Students.Count == 0)
+        {
+          <p>There are no Students in this Course.</p>
+        }
+        else 
+        {
+          <h4>Students in this Course:</h4>
+          <ul>
+          @foreach (var join in Model.Students)
+          {
+              <li>@join.Student.Name</li>
+          }
+          </ul>
+        }
+
+        <hr/>
+
+        <p>@Html.ActionLink("Back to List", "Index")</p>
+        <p>@Html.ActionLink("Edit Course", "Edit", new { id = Model.CourseId })</p>
+        <p>@Html.ActionLink("Delete Course", "Delete", new { id = Model.CourseId })</p>
+      </div>
+    </div>
+  </div>
+</div>

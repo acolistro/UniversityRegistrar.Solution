@@ -13,6 +13,8 @@ namespace UniversityRegistrar.Models
     public int StudentId {get; set;}
     
     public string Name {get; set;}
+
+    public Date Date { get; set;}
     
     public int CourseId {get; set;}
     

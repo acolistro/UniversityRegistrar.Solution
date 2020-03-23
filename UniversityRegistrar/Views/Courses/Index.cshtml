@@ -1,0 +1,33 @@
+@{
+  Layout = "_Layout";
+}
+
+@using UniversityRegistrar.Models;
+@using System.Collections.Generic;
+@model List<UniversityRegistrar.Models.Course>;
+
+  <div class="row">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div class="card bg-warning my-5">
+        <div class="card-body">
+          <h1>Courses</h1>
+          <hr>
+          @if (@Model.Count == 0)
+          {
+            <h3>No Courses have been added yet!</h3>
+          } 
+            @foreach(Course course in Model)
+            {
+                <p>@Html.ActionLink($"{course.Name}", "Details", new { id = course.CourseId })</p>
+            }
+
+            <hr/>
+
+            <p>@Html.ActionLink("Add new Course", "Create")</p>
+
+            <p>@Html.ActionLink("Home", "Index", "Home")</p>
+
+        </div>  
+      </div>
+    </div>
+  </div>        

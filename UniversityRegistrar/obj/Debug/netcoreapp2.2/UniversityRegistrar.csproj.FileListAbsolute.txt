@@ -1,0 +1,6 @@
+C:\Users\ThinkPad\desktop\UniversityRegistrar.Solution\UniversityRegistrar\obj\Debug\netcoreapp2.2\UniversityRegistrar.csprojAssemblyReference.cache
+C:\Users\ThinkPad\desktop\UniversityRegistrar.Solution\UniversityRegistrar\obj\Debug\netcoreapp2.2\UniversityRegistrar.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\desktop\UniversityRegistrar.Solution\UniversityRegistrar\obj\Debug\netcoreapp2.2\UniversityRegistrar.RazorAssemblyInfo.cache
+C:\Users\ThinkPad\desktop\UniversityRegistrar.Solution\UniversityRegistrar\obj\Debug\netcoreapp2.2\UniversityRegistrar.RazorAssemblyInfo.cs
+C:\Users\ThinkPad\desktop\UniversityRegistrar.Solution\UniversityRegistrar\obj\Debug\netcoreapp2.2\UniversityRegistrar.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\desktop\UniversityRegistrar.Solution\UniversityRegistrar\obj\Debug\netcoreapp2.2\UniversityRegistrar.AssemblyInfo.cs

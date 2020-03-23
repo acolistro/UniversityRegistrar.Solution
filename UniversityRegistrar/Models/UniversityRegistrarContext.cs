@@ -1,11 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace UniversityRegistrar.Models
 {
-  public class UniversityRegistrar
+  public class UniversityRegistrarContext : DbContext
     {       
-        public int UniversityRegistrarId { get; set; }
-        public int StudentId { get; set; }
-        public int CourseId { get; set; }
-        public Restaurant Student { get; set; }
-        public Cuisine Course { get; set; }
+    public virtual DbSet<Course> Courses { get; set; }
+    public DbSet<Student> Students{ get; set; }
+    public DbSet<CourseStudent> CourseStudent { get; set; }
+
+    public UniversityRegistrarContext(DbContextOptions options) : base(options) { }
     }
 }

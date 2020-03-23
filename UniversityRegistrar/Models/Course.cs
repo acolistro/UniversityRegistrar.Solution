@@ -3,12 +3,15 @@ using System;
 
 namespace UniversityRegistrar.Models
 {
-  public Course()
+  public class Course
   {
-    this.Courses = new HashSet<CourseStudent>();
+    public Course()
+    {
+      this.Students = new HashSet<CourseStudent>();
+    }
+
+    public int CourseId { get; set; }
+    public string Name {get; set;}
+    public virtual ICollection<CourseStudent> Students {get; set;}
   }
-  
-  public int CourseId { get; set; }
-  public string Name {get; set;}
-  public virtual ICollection<CourseStudent> Students {get; set;}
 }

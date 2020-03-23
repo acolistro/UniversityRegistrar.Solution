@@ -1,0 +1,45 @@
+@{
+  Layout = "_Layout";
+}
+
+@using UniversityRegistrar.Models
+@model UniversityRegistrar.Models.Student
+<div class="row">
+  <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+    <div class="card bg-warning my-5">
+      <div class="card-body">
+        <h2>Student Details</h2>
+        <h2>@Html.DisplayFor(model => model.Name)</h2>
+        <hr />
+
+        <p>@Html.DisplayNameFor(model => model.DateEnrolled): @Html.DisplayFor(model => model.DateEnrolled)<p>
+        @* <h4>@Html.DisplayNameFor(model => model.Cui): @Html.DisplayFor(model => model.Category)</h4> *@
+        <p>@Html.DisplayNameFor(model => model.CourseId): @Html.DisplayFor(model => model.CourseId)</p>
+
+        @if(@Model.Courses.Count == 0)
+        {
+          <p>This Student is not enrolled in any Courses</p>
+        }
+        else{
+          <h4>This Student's Courses</h4>
+            <ul>
+              @foreach(var join in Model.Courses)
+              {
+                <li>@join.Course.Name</li>
+                @using (Html.BeginForm("DeleteCourse", "Students"))
+                {
+                  @Html.Hidden("joinId", @join.CourseStudentId)
+                  <input type="submit" value="Delete"/>
+                }
+              }
+            </ul>
+        }
+        <p>@Html.ActionLink("Back to List", "Index")</p>
+        <p>@Html.ActionLink("Edit this Student", "Edit", new { id = Model.StudentId })</p>
+        <p>@Html.ActionLink("Delete This Student", "Delete", new { id = Model.StudentId })</p>
+        <p>@Html.ActionLink("Add a Cuisine", "AddCourse", new { id = Model.StudentId })</p>
+
+      </div>
+    </div>
+  </div>
+</div>
